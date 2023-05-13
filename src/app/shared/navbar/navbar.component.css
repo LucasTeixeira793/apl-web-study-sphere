@@ -1,0 +1,39 @@
+.navbar{
+    box-shadow: 0px 0px 15px #7d7d7d66;
+    background-color: #fff !important; 
+}
+
+.btn-icon {
+    padding: 0.375rem 0.75rem;
+    line-height: 1;
+    height: calc(1.5em + 0.75rem + 2px);
+  }
+
+.alinhar{
+    display: flex;
+    align-items: center;
+}
+
+.img-icon{
+    display: block;
+    max-width:40px;
+    max-height:40px;
+    width: auto;
+    height: auto;
+    margin: 0 .75rem 0 1.5rem;
+}
+
+.img-logo{
+    display: flex;
+    align-items: center;
+    max-width:120px;
+    max-height:40px;
+    width: auto;
+    height: 100% !important;
+    margin: 0 .75rem 0 0;
+}
+
+.sb{
+    display: flex;
+    justify-content: space-between;
+}
