@@ -14,6 +14,24 @@
     align-items: center;
 }
 
+.search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.search-bar input[type="search"]{
+    outline: none;
+    border: none;
+    background-color: #eee;
+}
+
+.search-bar input[type="search"]:hover{
+    background-color: #e1e1e1;
+}
+
+
 .img-icon{
     display: block;
     max-width:40px;
@@ -33,7 +51,12 @@
     margin: 0 .75rem 0 0;
 }
 
-.sb{
-    display: flex;
-    justify-content: space-between;
+.nav-link:hover{
+    color: #3ade7b;
+}
+
+@media (min-width: 992px){
+    .search-bar .input-group{
+        width: 50%;
+    }    
 }
