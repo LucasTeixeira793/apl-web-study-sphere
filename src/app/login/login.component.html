@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="my-3">
+    <div class="container">
+        <div class="centralizar">
+            <img class="img-icon centralizar" [routerLink]="['/']" src="../../assets/img/study-sphere-icon.png">
+            <div class="acessar-label">
+                <span>Acessar </span>
+                <img src="../../assets/img/study-sphere-logo.png">
+            </div>
+            <div class="form-login card my-3">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email:</label>
+                    <input type="email" class="form-control" placeholder="seu.email@email.com" id="exampleFormControlInput1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput2" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" placeholder="SuaSenha123" id="exampleFormControlInput2">
+                    <a class="esqueci-a-senha">Esqueceu a senha?</a>
+                </div>
+                <button class="btn-model" [routerLink]="['/login']" type="button">Fazer login</button>
+            </div>
+
+            <div class="register-card card">
+                <div>
+                    Novo por aqui? <a [routerLink]="['/register']">Crie uma conta</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

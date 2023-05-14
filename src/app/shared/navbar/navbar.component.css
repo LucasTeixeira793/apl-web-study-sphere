@@ -9,11 +9,6 @@
     height: calc(1.5em + 0.75rem + 2px);
   }
 
-.alinhar{
-    display: flex;
-    align-items: center;
-}
-
 .search-bar{
     width: 100%;
     display: flex;
