@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NavbarLoggedInComponent } from './shared/navbar/navbar-logged-in/navbar-logged-in.component';
+import { NavbarLoggedOutComponent } from './shared/navbar/navbar-logged-out/navbar-logged-out.component';
+import { SidebarComponent } from './shared/navbar/navbar-logged-in/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavbarLoggedInComponent,
+    NavbarLoggedOutComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

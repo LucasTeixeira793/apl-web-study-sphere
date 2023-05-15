@@ -1,0 +1,8 @@
+.home{
+    position: absolute;
+    left: 78px;
+    height: 100vh;
+    width: calc(100% - 78px);
+    padding: 12px 60px;
+    
+}

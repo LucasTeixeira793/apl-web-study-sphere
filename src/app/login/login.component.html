@@ -16,7 +16,7 @@
                     <input type="password" class="form-control" placeholder="SuaSenha123" id="exampleFormControlInput2">
                     <a class="esqueci-a-senha">Esqueceu a senha?</a>
                 </div>
-                <button class="btn-model" [routerLink]="['/login']" type="button">Fazer login</button>
+                <button class="btn-model" (click)="login()" type="button">Fazer login</button>
             </div>
 
             <div class="register-card card">
