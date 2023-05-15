@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavbarLoggedInComponent } from './shared/navbar/navbar-logged-in/navbar-logged-in.component';
 import { NavbarLoggedOutComponent } from './shared/navbar/navbar-logged-out/navbar-logged-out.component';
-import { SidebarComponent } from './shared/navbar/navbar-logged-in/sidebar/sidebar.component';
+import { SidebarComponent } from './shared/navbar/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
