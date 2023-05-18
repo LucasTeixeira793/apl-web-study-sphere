@@ -12,6 +12,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NavbarLoggedInComponent } from './shared/navbar/navbar-logged-in/navbar-logged-in.component';
 import { NavbarLoggedOutComponent } from './shared/navbar/navbar-logged-out/navbar-logged-out.component';
 import { SidebarComponent } from './shared/navbar/sidebar/sidebar.component';
+import { CardAnotacaoComponent } from './shared/card-anotacao/card-anotacao.component';
+import { TagComponent } from './shared/tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SidebarComponent } from './shared/navbar/sidebar/sidebar.component';
     NotFoundComponent,
     NavbarLoggedInComponent,
     NavbarLoggedOutComponent,
-    SidebarComponent
+    SidebarComponent,
+    CardAnotacaoComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,

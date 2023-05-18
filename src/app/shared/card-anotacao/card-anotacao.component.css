@@ -1,0 +1,70 @@
+.card-home{
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 15px #66666666;
+    margin: 1rem 0 0 0;    
+    cursor: pointer;
+    border-bottom: #3ade7b solid 5px;
+    
+    -moz-transition: .2s;
+    -webkit-transition: .2s;
+}
+
+.card-home:hover{
+    transform: scale(1.03);
+    transition: .2s;
+}
+
+.card-header{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header .nm-autor{
+    font-weight: 500;
+    font-size: .75rem;
+    color: #3ade7b;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card-header .nm-autor:hover{
+    text-decoration: underline;
+    color: #3ade7b;
+}
+
+.card-header .titulo-anotacao{
+    font-weight: 500;
+}
+
+.card-content{
+    padding: 1rem;
+}
+
+.card-content .content-text{
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5; /* Número de linhas */
+}
+
+.card-tags *{
+    margin-right: 1rem;
+}
+
+.card-infos{
+    margin: .5rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.info-item:hover{
+    color: #3ade7b;
+}
+
+.info-item i{
+    font-size: .75rem;
+    margin-right: .25rem;
+}

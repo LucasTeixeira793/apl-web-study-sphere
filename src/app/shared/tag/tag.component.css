@@ -1,0 +1,12 @@
+.tag{
+    font-size: .75rem;
+    border: .5px solid #3ade7b;
+    background-color: #9ae6b8;
+    text-align: center;
+    padding: .1rem .5rem;
+    border-radius: 30px;
+}
+
+.tag:hover{
+    background-color: #5ac585;
+}
