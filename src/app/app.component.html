@@ -1,4 +1,7 @@
 <app-navbar></app-navbar>
-<div class="home">
+<div *ngIf="shouldAdaptSidebar()" class="home">
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="!shouldAdaptSidebar()">
     <router-outlet></router-outlet>
 </div>

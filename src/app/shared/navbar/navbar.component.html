@@ -1,5 +1,7 @@
 <div *ngIf="shouldShowNavbar()">
-  <app-sidebar *ngIf="isUserLoggedIn()"></app-sidebar>
-  <app-navbar-logged-in *ngIf="isUserLoggedIn()"></app-navbar-logged-in>
+  <div *ngIf="isUserLoggedIn()">
+    <app-sidebar></app-sidebar>
+    <app-navbar-logged-in></app-navbar-logged-in>
+  </div>
   <app-navbar-logged-out *ngIf="!isUserLoggedIn()"></app-navbar-logged-out>
 </div>

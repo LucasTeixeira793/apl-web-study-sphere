@@ -14,6 +14,7 @@ import { NavbarLoggedOutComponent } from './shared/navbar/navbar-logged-out/navb
 import { SidebarComponent } from './shared/navbar/sidebar/sidebar.component';
 import { CardAnotacaoComponent } from './shared/card-anotacao/card-anotacao.component';
 import { TagComponent } from './shared/tag/tag.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TagComponent } from './shared/tag/tag.component';
     NavbarLoggedOutComponent,
     SidebarComponent,
     CardAnotacaoComponent,
-    TagComponent
+    TagComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

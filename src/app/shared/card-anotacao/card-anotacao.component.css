@@ -11,7 +11,8 @@
 }
 
 .card-home:hover{
-    transform: scale(1.03);
+    box-shadow: 0 0 15px #3ade7b66;
+    /* transform: scale(1.03); */
     transition: .2s;
 }
 
@@ -44,9 +45,9 @@
 
 .card-content .content-text{
     overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5; /* Número de linhas */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5; /* Número de linhas */
 }
 
 .card-tags *{
