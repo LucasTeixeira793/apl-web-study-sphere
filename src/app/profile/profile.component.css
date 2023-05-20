@@ -37,6 +37,7 @@
     width: 80%;
     height: 100vh;
     border-radius: 10px;
+    padding: 5rem;
 }
 
 .card-header {
@@ -45,17 +46,18 @@
     align-items: center;
 }
 
-.card-header .card-infos{
+.card-infos{
     width: 100%;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
 }
 
-.card-header .card-infos .info-group{
+.info-group{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;    
 }
 
 /* Estilizando a imagem */
@@ -70,7 +72,7 @@
     height: 150px;
     border-radius: 50%;
     /* Torna a imagem circular */
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
 }
 
 .overlay {
@@ -102,4 +104,34 @@
     /* Define a cor do ícone */
     font-size: 24px;
     /* Define o tamanho do ícone */
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-name{
+    font-size: 1.25rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.info-college{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.info-college:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #3800d1;
+    white-space: nowrap;
+}
+
+.info-value{
+    font-size: 2rem;
+    font-weight: 500;
 }
