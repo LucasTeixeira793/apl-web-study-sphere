@@ -15,6 +15,10 @@
 .settings/
 *.sublime-workspace
 
+# angular
+/.angular
+/.angular/cache
+
 # IDE - VSCode
 .vscode
 .vscode/*
