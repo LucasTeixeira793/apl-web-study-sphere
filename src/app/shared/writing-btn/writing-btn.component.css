@@ -1,0 +1,34 @@
+.text{
+    visibility: hidden;
+    font-weight: bold;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    background-color: #266347;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 25px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 10px #666;
+    cursor: pointer;
+}
+
+.floating-button:hover {
+    width: 150px;
+    padding-right: 20px;
+}
+.floating-button:hover > .text {
+    visibility: visible;
+}

@@ -1,71 +1,72 @@
 .card-home{
+    margin: 2vh 0;
+    border-radius: 28px;
     background-color: #fff;
-    border: none;
-    box-shadow: 0 0 15px #66666666;
-    margin: 1rem 0 0 0;    
+    box-shadow: 0 0 10px #666;
     cursor: pointer;
-    border-bottom: #3ade7b solid 5px;
-    
-    -moz-transition: .2s;
-    -webkit-transition: .2s;
-}
-
-.card-home:hover{
-    box-shadow: 0 0 15px #3ade7b66;
-    /* transform: scale(1.03); */
-    transition: .2s;
-}
-
-.card-header{
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-header .nm-autor{
-    font-weight: 500;
-    font-size: .75rem;
-    color: #3ade7b;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.card-header .nm-autor:hover{
-    text-decoration: underline;
-    color: #3ade7b;
-}
-
-.card-header .titulo-anotacao{
-    font-weight: 500;
+    overflow: hidden;
 }
 
 .card-content{
-    padding: 1rem;
+    padding: 30px;
 }
 
-.card-content .content-text{
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5; /* Número de linhas */
+.card-writer{
+    display: flex;
+}
+
+.card-writer .link{
+    font-weight: 500;
+    color: #3ade7b;
+    text-decoration: underline;
+}
+
+.card-writer .link:hover{
+    text-decoration: none;
+    color: #3ade7b;
+}
+
+.card-writer *{
+    margin-right: 5px;
+}
+
+.card-writer img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.card-title{
+    padding: 20px 0;
+}
+.card-title span {
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 .card-tags *{
     margin-right: 1rem;
 }
 
-.card-infos{
-    margin: .5rem 0 0 0;
+.card-info{
+    color: #838383;
+}
+
+.card-info span{
+    margin-left: 5px;
+}
+
+.card-icon{
+    /* border-radius: 0 28px 28px 0; */
+    background-color: #3ade7b;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
-    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
 }
-
-.info-item:hover{
-    color: #3ade7b;
-}
-
-.info-item i{
-    font-size: .75rem;
-    margin-right: .25rem;
+.card-icon i{
+    font-size: 2rem ;
+    padding: 15px;
 }

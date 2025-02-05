@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UniversityComponent } from './university/university.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'profile/:user', component: ProfileComponent },
+  { path: 'universidade', component: UniversityComponent },
   { path: '404',  component: NotFoundComponent },
   { path: '**', redirectTo: '/404', pathMatch: 'full' } // 404
 ];

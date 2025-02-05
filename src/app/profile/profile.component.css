@@ -1,31 +1,13 @@
-.bg {
+.banner {
     position: absolute;
-    /* Altere de absolute para relative */
     width: 100%;
-    height: 60vh;
-    background: linear-gradient(45deg, #3800d1, #8c43d1);
+    height: 200px;
+    background: linear-gradient(45deg, #958279, #808080);
 }
 
-.separator {
-    position: absolute;
-    bottom: 0;
-    /* Posiciona o elemento no final da div pai */
-    left: 0;
-    /* Alinha o elemento à esquerda */
-    width: 100%;
-}
-
-.fill-white {
-    fill: #eee;
-}
-
-.separator svg {
-    color: #66666666;
-}
-
-.container {
+.container-profile {
     position: relative;
-    padding: 5rem 0;
+    padding: 1.5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,115 +17,26 @@
     background-color: #fff;
     box-shadow: 0 0 15px #66666666;
     width: 80%;
-    height: 100vh;
-    border-radius: 10px;
-    padding: 2rem 5rem 5rem 5rem;
-}
-
-.card-header {
-    padding: 5rem;
-    display: flex;
-    align-items: center;
-}
-
-.card-infos{
-    width: 100%;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.info-group{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;    
-}
-
-/* Estilizando a imagem */
-.image-container {
+    min-height: 100vh;
+    border-radius: 28px;
+    overflow: hidden;
     position: relative;
-    display: inline-block;
 }
-
-.image {
-    width: 150px;
-    /* Defina o tamanho desejado para a imagem */
-    height: 150px;
-    border-radius: 50%;
-    /* Torna a imagem circular */
-    /* margin-right: 5rem; */
+  
+/* Telas maiores (desktop) */
+@media (min-width: 768px) {
+    .container-card {
+        padding: 40px 80px; /* Aumenta o espaçamento lateral */
+    }
 }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Define a cor de fundo e a transparência */
-    opacity: 0;
-    /* Inicialmente, o overlay é transparente */
-    transition: opacity 0.3s ease;
-    /* Adiciona uma transição suave */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  /* Telas muito grandes */
+@media (min-width: 1200px) {
+    .container-card {
+        padding: 60px 120px; /* Mais espaçamento para grandes telas */
+    }
 }
-
-.overlay:hover {
-    cursor: pointer;
-    opacity: 1;
-    /* Ao passar o mouse por cima, o overlay se torna opaco */
-}
-
-.overlay i {
-    color: white;
-    /* Define a cor do ícone */
-    font-size: 24px;
-    /* Define o tamanho do ícone */
-}
-
-.description{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    margin: 0 0 1rem 0;
-}
-
-.info-name{
-    font-size: 1.25rem;
-    text-align: center;
-    white-space: nowrap;
-}
-
-.info-college{
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 500;
-    white-space: nowrap;
-} 
-
-.info-college:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    color: #3800d1;
-    white-space: nowrap;
-}
-
-.info-value{
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.resume{
-    margin: 2rem 0;
-    text-align: center;
-}
-
-
+  
 
 
 

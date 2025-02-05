@@ -30,6 +30,7 @@ body{
     background: #fff;
     transition: all 0.3s ease;
     z-index: 100;  
+    box-shadow: 0 0 5px #666;
 }
 .sidebar.close{
     width: 88px;
@@ -268,6 +269,10 @@ body.dark .switch::before{
     font-weight: 500;
     color: #707070;
     padding: 12px 60px;
+}
+
+.img-logo{
+    cursor: pointer;
 }
 
 .sidebar.close ~ .home{

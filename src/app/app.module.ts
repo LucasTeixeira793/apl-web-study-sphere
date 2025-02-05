@@ -15,6 +15,8 @@ import { SidebarComponent } from './shared/navbar/sidebar/sidebar.component';
 import { CardAnotacaoComponent } from './shared/card-anotacao/card-anotacao.component';
 import { TagComponent } from './shared/tag/tag.component';
 import { ProfileComponent } from './profile/profile.component';
+import { UniversityComponent } from './university/university.component';
+import { WritingBtnComponent } from './shared/writing-btn/writing-btn.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ProfileComponent } from './profile/profile.component';
     SidebarComponent,
     CardAnotacaoComponent,
     TagComponent,
-    ProfileComponent
+    ProfileComponent,
+    UniversityComponent,
+    WritingBtnComponent
   ],
   imports: [
     BrowserModule,
