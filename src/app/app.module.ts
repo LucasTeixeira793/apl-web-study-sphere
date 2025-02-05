@@ -19,6 +19,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { UniversityComponent } from './university/university.component';
 import { WritingBtnComponent } from './shared/writing-btn/writing-btn.component';
 import { HighlightService } from './shared/services/highlight.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,10 @@ import { HighlightService } from './shared/services/highlight.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [HighlightService],
   bootstrap: [AppComponent]

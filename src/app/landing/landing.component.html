@@ -1,1 +1,24 @@
-<div [innerHTML]="htmlContent"></div>
+
+
+
+<form [formGroup]="form">
+    <div class="code-container">
+        <select formControlName="codeType" class="select-language">
+            <option value="markup" selected>Markup</option>
+            <option value="java">Java</option>
+            <option value="dotnet">C#</option>
+            <option value="sql">SQL</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="scss">SCSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="typescript">TypeScript</option>
+            <option value="json">JSON</option>
+        </select>        
+        <textarea *ngIf="editable" #textArea formControlName="content" class="text-area-code-editor" spellcheck="false">
+        </textarea>
+        <pre #pre aria-hidden="true" class="pre">
+            <code #codeContent [ngClass]="['code', 'language-' + form.value.codeType]"></code>
+        </pre>
+    </div>
+</form>

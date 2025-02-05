@@ -1,4 +1,71 @@
-.carousel-inner img{
-    height: 90vh;
-    object-fit: cover;
+.select-language{
+    border: none;
+    margin: 0 0 0 70px;
+    color: #838383;
+    font-size: .75em;
+    background: transparent;
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.code-container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.text-area-code-editor{
+    caret-color: #838383;
+    white-space: nowrap;
+    overflow: auto;
+    text-align: left;
+    display: block;
+    resize: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: transparent;
+    background: transparent;
+    z-index: 2;
+    padding: 39px 0 0 70px !important;
+}
+
+.text-area-code-editor, .text-area-code-editor:focus{
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+}
+
+.text-area-code-editor, .pre, .code {
+    tab-size: 4;
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.pre {
+    text-indent: 0;
+    height: 100%;
+    min-height: inherit;
+    z-index: 1;
+    overflow: auto;
+    padding: 15px 0 0 70px;
+    border-radius: 28px;
+    box-shadow: 0 0 5px #838383;
+    margin: 20px 0;
+}
+
+.pre .code {
+    text-indent: 0;
+    min-height: inherit;
+    overflow: hidden;
+    height: 100%;
+    display: block;
 }
