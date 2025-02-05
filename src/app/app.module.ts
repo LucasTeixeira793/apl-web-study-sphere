@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
@@ -17,6 +18,7 @@ import { TagComponent } from './shared/tag/tag.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UniversityComponent } from './university/university.component';
 import { WritingBtnComponent } from './shared/writing-btn/writing-btn.component';
+import { HighlightService } from './shared/services/highlight.service';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,14 @@ import { WritingBtnComponent } from './shared/writing-btn/writing-btn.component'
     TagComponent,
     ProfileComponent,
     UniversityComponent,
-    WritingBtnComponent
+    WritingBtnComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [HighlightService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
